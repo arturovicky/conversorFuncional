@@ -22,7 +22,7 @@
         case 'c':
             $response = array(
                 'f' => ($valor * (9/5)+32),  // Convertir de Celsius a Fahrenheit
-                'k' => $valor + 273.5          // Convertir de Celsius a Kelvin
+                'k' => $valor + 273.15          // Convertir de Celsius a Kelvin
             );
             echo json_encode($response);
             break;
@@ -36,8 +36,8 @@
             break;
         case 'k':
             $response = array(
-                'c' => (($valor -32) * (5/9)),  // Convertir de Celsius a Fahrenheit
-                'f' => (($valor -273.15) * (9/5))    // Convertir de Celsius a Kelvin
+                'c' => $valor -273.15,  // Convertir de Celsius a Fahrenheit
+                'f' => (($valor -273.15)* 9/5+32)   // Convertir de Celsius a Kelvin
             );
             echo json_encode($response);
             // Aquí puedes añadir el código para convertir de Kelvin a Celsius y Fahrenheit

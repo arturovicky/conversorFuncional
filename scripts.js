@@ -7,19 +7,10 @@ function miFuncion(tipo) {
         f: document.getElementById('f').value,
         k: document.getElementById('k').value,
     };
-    var valoresFinales={
-        c: 0,
-        f: 0,
-        k: 0,
-    }
+    
     switch (tipo) {
         case "c":
            enviarHttp(tipo,valores.c);
-            document.getElementById('f').value=valoresFinales.f;
-            document.getElementById('k').value=valoresFinales.k;
-           
-
-            
             break;
         case 'f':
             enviarHttp(tipo,valores.f);
