@@ -2,10 +2,19 @@
     padding: 0;
     margin: 0;
 }
+html,body{
+    height: 100%;
+}
 body{
     font-family: 'Roboto', sans-serif;
-    display: flex;
+    display: grid;
     justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(#f44369 0%, #3e3b92 80%);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .contenedor{
     font-size: x-large;
@@ -13,11 +22,13 @@ body{
     display: inline;
     text-align: center;
     width: auto;
-    height: auto;
-    background-color: blue;
+    height: max-content;
+    background-color: #353535;
     border-radius: 30px;
     padding-bottom: 3rem;
     border: none;
+    color: whitesmoke;
+    user-select: none;
 }
 .contenedor input{
     border-radius: 1rem;
@@ -27,3 +38,5 @@ body{
     font-size: x-large;
     outline: none;
 }
+
+

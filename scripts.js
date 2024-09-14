@@ -54,6 +54,6 @@ function enviarHttp(tipo,valor){
        }
         
     })
-    .catch(error => console.error('Error:', error));
+    
 }
 
